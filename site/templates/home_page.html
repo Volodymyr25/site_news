@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+
+Новини Сьогодні
+
+{% endblock %}
+
+
+{% block body %}
+    <header>
+        <h1>Останні новини</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Головна</a></li>
+                <li><a href="/politics">Політика</a></li>
+                <li><a href="/economy">Економіка</a></li>
+                <li><a href="/sport">Спорт</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="news">
+            <article>
+                <img src="static/Zelenskiy.jpg" alt="Зображення новини">
+                <h2>{{ text }}</h2>
+                <a href="/politics">Читати далі...</a></p>
+            </article>
+            <br>
+            <br>
+            <article>
+                <img src="static/inflation.jpg" alt="Зображення новини">
+                <h2>Місячна інфляція в Аргентині впала до мінімуму за 4 роки</h2></p>
+                <p>Місячна інфляція в Аргентині у січні знизилася до 2,2%, що є найнижчим рівнем з середини 2020 року.
+                <br><a href="/economy">Читати далі...</a></p>
+            </article>
+            <br>
+            <br>
+
+
+            <article>
+                <img src="static/Usyk.jpg" alt="Зображення новини">
+                    <h2>Ще два поєдинки: Усик несподівано заговорив про завершення кар’єри</h2>
+                        <p>Український чемпіон Олександр Усик зізнався, скільки боїв планує провести перед тим, як вирішить завершити кар’єру<br>
+                        <a href="/sport">Читати далі...</a></p>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>2025 Новини України</p>
+    </footer>
+{% endblock %}
